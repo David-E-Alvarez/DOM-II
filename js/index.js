@@ -11,3 +11,10 @@ picToAddBorderTo.addEventListener("mouseover", (event)=>{
 picToAddBorderTo.addEventListener("mouseleave", (event)=>{
     event.target.style.border = 'none';
 })
+
+//keydown event
+document.addEventListener("keydown", (event)=>{
+    console.log("event for keydown: " + event);
+    alert("you pressed a key; what's up?");
+})
+
