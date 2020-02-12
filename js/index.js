@@ -18,3 +18,33 @@ document.addEventListener("keydown", (event)=>{
     alert("you pressed a key; what's up?");
 })
 
+//scroll event; zoom in/out of text
+let textToZoom = document.querySelectorAll('.intro h2 p');
+//console.log("textToZoom: " + textToZoom);doesn't give me anything is nodelist
+document.addEventListener('wheel', (event)=>{
+    console.log("event: " + event);
+
+});
+
+//drag and drop
+
+//load
+window.addEventListener('load', (event) => {
+    alert("Page is loaded.")
+});
+
+//focus//focus don't work
+let getTextContent = document.querySelector('.text-content');
+getTextContent.addEventListener('focus', (event)=>{
+    console.log("event: " + event);
+    event.target.style.background = 'red';
+})
+
+//resize
+window.addEventListener('resize', (event)=>{
+    //console.log("resize event: " + event);
+    console.log("Height: " + window.innerHeight);
+    console.log("Width: " + window.innerWidth);
+})
+
+
