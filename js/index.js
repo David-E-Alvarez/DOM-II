@@ -47,4 +47,18 @@ window.addEventListener('resize', (event)=>{
     console.log("Width: " + window.innerWidth);
 })
 
+//click
+let highlight = document.querySelector('.text-content');
+highlight.addEventListener('select', (event)=>{
+    console.log("highlight event: " + event);
+});
+
+//dbclick
+let pic = document.querySelector('.img-content');
+pic.addEventListener('dblclick', event => {
+    console.log("img event: " + event);
+    event.target.style.border = '2px red solid'; 
+});
+
+
 
